@@ -88,7 +88,7 @@ main {
     font-size: 16px;
     height: 36px;
     padding-left: 32px;
-    padding-right: 36px;
+    padding-right: .5rem;
     transition: width 175ms ease-in-out;
     width: 100%;
     outline: none;
