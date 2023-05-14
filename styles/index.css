@@ -1,0 +1,124 @@
+:root {
+    --padding: 0 1rem;
+    --blue: rgb(0, 91, 255);
+    --grey: #707f8d;
+    --grey-light: rgb(210, 217, 223);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    margin-top: 1rem;
+    font-family: Calibri;
+}
+
+main {
+    padding: var(--padding);
+    margin-bottom: 5rem;
+}
+
+.navigation {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 10px 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;;
+    background-color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    list-style-type: none;
+    padding: var(--padding);
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+}
+
+.nav-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:rgb(112, 127, 141);
+    padding: .4rem 0;
+    font-size: .7rem;
+}
+
+.nav-list__item--current {
+    color: var(--blue);
+}
+
+.search-field{
+    position: relative;
+    color: rgb(112, 127, 141);
+    flex: 1;
+}
+
+.search-field__icon {
+    color:#707f8d;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+}
+
+.search-field__input {
+    background: #f2f5f9;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #001a34;
+    font-size: 16px;
+    height: 36px;
+    padding-left: 32px;
+    padding-right: 36px;
+    transition: width 175ms ease-in-out;
+    width: 100%;
+    outline: none;
+}
+
+.app-header {
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: var(--padding);
+}
+
+.sub-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    color: var(--blue);
+    padding: 0 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+}
+
+.sub-header__location {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    overflow: hidden;
+    /* flex-shrink: 0; */
+}
+
+.sub-header__delivery {
+    color: var(--blue);
+    flex-shrink: 0;
+}
+
+.location__icon {
+    flex-shrink: 0;
+}
+
+.location__text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

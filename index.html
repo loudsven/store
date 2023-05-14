@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/items.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="app-header">
+        <div class="search-field">
+            <svg width="16" height="16" class="search-field__icon"><path fill="currentColor" d="M7 3a4 4 0 1 0 0 8 4 4 0 0 0 0-8ZM1 7a6 6 0 1 1 10.895 3.47l2.814 2.824a1 1 0 1 1-1.418 1.412l-2.808-2.82A6 6 0 0 1 1 7Z"></path></svg>
+            <input placeholder="Искать на Run.Market"class="search-field__input" type="search">
+        </div>
+        <svg width="24" height="24"><path fill="currentColor" d="M3 6a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1Zm0 6a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1Zm1 5a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H4Z"></path></svg>
+        <svg width="24" height="24" style="color: rgb(0, 26, 52);"><path fill="currentColor" d="M13 15a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-3-6.5c0-.665.717-1.5 2-1.5s2 .835 2 1.5c0 .46-.108.626-.167.696-.084.101-.225.196-.554.343a7.19 7.19 0 0 1-.17.073c-.622.264-1.726.73-2.08 2.146a1 1 0 1 0 1.941.485c.106-.423.296-.508 1.009-.826l.117-.053c.358-.16.874-.407 1.274-.888.426-.511.63-1.167.63-1.976C16 6.404 14.03 5 12 5 9.97 5 8 6.404 8 8.5a1 1 0 0 0 2 0Z"></path><path fill="currentColor" d="M8 2a7 7 0 0 0-7 7v4a6.002 6.002 0 0 0 5 5.917V22a1 1 0 0 0 1.707.707L11.414 19H16.5a1 1 0 0 0 .297-.045A7.001 7.001 0 0 0 23 12V9a7 7 0 0 0-7-7H8Zm8 15h-5.003a.996.996 0 0 0-.697.286l-.008.008L8 19.586V18a1 1 0 0 0-1-1 4 4 0 0 1-4-4V9a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v3a5 5 0 0 1-5 5Z"></path></svg>
+    </header>
+    <header class="sub-header">
+        <div class="sub-header__location">
+            <svg class="location__icon" width="24" height="24"><path fill="currentColor" d="M12 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm-3 5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Z"></path><path fill="currentColor" d="M12 1a9 9 0 0 0-9 9c0 2.514 1.136 4.848 2.699 6.942 1.565 2.099 3.631 4.05 5.643 5.81a1 1 0 0 0 1.316 0c2.012-1.76 4.078-3.711 5.644-5.81C19.864 14.848 21 12.514 21 10a9 9 0 0 0-9-9Zm-7 9a7 7 0 0 1 14 0c0 1.904-.864 3.82-2.302 5.746-1.275 1.71-2.945 3.353-4.698 4.92-1.753-1.567-3.423-3.21-4.699-4.92C5.864 13.82 5 11.904 5 10Z"></path></svg>
+            <p class="location__text">Набережные Челны</p>
+        </div>
+        <p class="sub-header__delivery">
+            Укажите адрес доставки
+        </p>
+    </header>
+    <main class="main">
+        <ul class="item-list">
+            <li class="item-list__item">
+                <div class="list-item__left">
+                    <div class="img-wrapper">
+                        <img class="list-item__img" src="./assets/img/item.webp" alt="reaclme C30s 2/32 ГБ, черный">
+                        <div class="image-filter"></div>
+                    </div>
+                    <footer>
+                        <div class="list-item__rating">
+                            <svg width="16" height="16" style="color: rgb(255, 184, 0);"><path fill="currentColor" d="M8 2a1 1 0 0 1 .87.508l1.538 2.723 2.782.537a1 1 0 0 1 .538 1.667L11.711 9.58l.512 3.266A1 1 0 0 1 10.8 13.9L8 12.548 5.2 13.9a1 1 0 0 1-1.423-1.055l.512-3.266-2.017-2.144a1 1 0 0 1 .538-1.667l2.782-.537 1.537-2.723A1 1 0 0 1 8 2Z"></path></svg>
+                            4.9</div>
+                        <div class="list-item__comments">
+                            <svg width="16" height="16" style="color: rgb(112, 127, 141);"><path fill="currentColor" d="M8 4C5.803 4 4 5.803 4 8c0 .731.226 1.41.608 2.034a1 1 0 0 1 .147.522c0 .506-.07.934-.19 1.338.431-.069.76-.167.964-.276a1 1 0 0 1 .888-.027C6.984 11.851 7.464 12 8 12c2.197 0 4-1.803 4-4s-1.803-4-4-4ZM2 8c0-3.301 2.699-6 6-6s6 2.699 6 6-2.699 6-6 6c-.757 0-1.41-.176-1.998-.41a6.23 6.23 0 0 1-1.265.3c-.593.086-1.208.113-1.743.11a1 1 0 0 1-.888-1.447c.429-.859.6-1.248.64-1.745A5.769 5.769 0 0 1 2 8Z"></path></svg>
+                            207
+                        </div>
+                    </footer>
+                    
+                </div>
+                <div class="list-item__right">
+                    <p class="list-item__price">3000₽
+                        <!-- <span class="list-item__old-price">7 999₽</span> -->
+                    </p>
+                    <p class="list-item__left-count">
+                        Осталось 765 шт
+                    </p>
+                    <h2 class="list-item__title">Смартфон realme C30s 2/32 ГБ, черный</h2>
+                    <div class="list-item__description">
+                        <p>Тип: <span>Смартфон</span></p>
+                        <p>Диагональ экрана, дюймы: <span>6.5</span></p>
+                        <p>Емкость аккумулятора, мАч: <span>5000</span></p>
+                    </div>
+                    <button class="list-item__add">В корзину</button>
+                </div>
+            </li>
+            <li class="item-list__item">
+                <div class="list-item__left">
+                    <div class="img-wrapper">
+                        <img class="list-item__img" src="./assets/img/item.webp" alt="reaclme C30s 2/32 ГБ, черный">
+                        <div class="image-filter"></div>
+                    </div>
+                    <footer>
+                        <div class="list-item__rating">
+                            <svg width="16" height="16" style="color: rgb(255, 184, 0);"><path fill="currentColor" d="M8 2a1 1 0 0 1 .87.508l1.538 2.723 2.782.537a1 1 0 0 1 .538 1.667L11.711 9.58l.512 3.266A1 1 0 0 1 10.8 13.9L8 12.548 5.2 13.9a1 1 0 0 1-1.423-1.055l.512-3.266-2.017-2.144a1 1 0 0 1 .538-1.667l2.782-.537 1.537-2.723A1 1 0 0 1 8 2Z"></path></svg>
+                            4.9</div>
+                        <div class="list-item__comments">
+                            <svg width="16" height="16" style="color: rgb(112, 127, 141);"><path fill="currentColor" d="M8 4C5.803 4 4 5.803 4 8c0 .731.226 1.41.608 2.034a1 1 0 0 1 .147.522c0 .506-.07.934-.19 1.338.431-.069.76-.167.964-.276a1 1 0 0 1 .888-.027C6.984 11.851 7.464 12 8 12c2.197 0 4-1.803 4-4s-1.803-4-4-4ZM2 8c0-3.301 2.699-6 6-6s6 2.699 6 6-2.699 6-6 6c-.757 0-1.41-.176-1.998-.41a6.23 6.23 0 0 1-1.265.3c-.593.086-1.208.113-1.743.11a1 1 0 0 1-.888-1.447c.429-.859.6-1.248.64-1.745A5.769 5.769 0 0 1 2 8Z"></path></svg>
+                            207
+                        </div>
+                    </footer>
+                    
+                </div>
+                <div class="list-item__right">
+                    <p class="list-item__price">3000₽
+                        <!-- <span class="list-item__old-price">7 999₽</span> -->
+                    </p>
+                    <p class="list-item__left-count">
+                        Осталось 765 шт
+                    </p>
+                    <h2 class="list-item__title">Смартфон realme C30s 2/32 ГБ, черный</h2>
+                    <div class="list-item__description">
+                        <p>Тип: <span>Смартфон</span></p>
+                        <p>Диагональ экрана, дюймы: <span>6.5</span></p>
+                        <p>Емкость аккумулятора, мАч: <span>5000</span></p>
+                    </div>
+                    <button class="list-item__add">В корзину</button>
+                </div>
+            </li>
+            <li class="item-list__item">
+                <div class="list-item__left">
+                    <div class="img-wrapper">
+                        <img class="list-item__img" src="./assets/img/item.webp" alt="reaclme C30s 2/32 ГБ, черный">
+                        <div class="image-filter"></div>
+                    </div>
+                    <footer>
+                        <div class="list-item__rating">
+                            <svg width="16" height="16" style="color: rgb(255, 184, 0);"><path fill="currentColor" d="M8 2a1 1 0 0 1 .87.508l1.538 2.723 2.782.537a1 1 0 0 1 .538 1.667L11.711 9.58l.512 3.266A1 1 0 0 1 10.8 13.9L8 12.548 5.2 13.9a1 1 0 0 1-1.423-1.055l.512-3.266-2.017-2.144a1 1 0 0 1 .538-1.667l2.782-.537 1.537-2.723A1 1 0 0 1 8 2Z"></path></svg>
+                            4.9</div>
+                        <div class="list-item__comments">
+                            <svg width="16" height="16" style="color: rgb(112, 127, 141);"><path fill="currentColor" d="M8 4C5.803 4 4 5.803 4 8c0 .731.226 1.41.608 2.034a1 1 0 0 1 .147.522c0 .506-.07.934-.19 1.338.431-.069.76-.167.964-.276a1 1 0 0 1 .888-.027C6.984 11.851 7.464 12 8 12c2.197 0 4-1.803 4-4s-1.803-4-4-4ZM2 8c0-3.301 2.699-6 6-6s6 2.699 6 6-2.699 6-6 6c-.757 0-1.41-.176-1.998-.41a6.23 6.23 0 0 1-1.265.3c-.593.086-1.208.113-1.743.11a1 1 0 0 1-.888-1.447c.429-.859.6-1.248.64-1.745A5.769 5.769 0 0 1 2 8Z"></path></svg>
+                            207
+                        </div>
+                    </footer>
+                    
+                </div>
+                <div class="list-item__right">
+                    <p class="list-item__price">3000₽
+                        <!-- <span class="list-item__old-price">7 999₽</span> -->
+                    </p>
+                    <p class="list-item__left-count">
+                        Осталось 765 шт
+                    </p>
+                    <h2 class="list-item__title">Смартфон realme C30s 2/32 ГБ, черный</h2>
+                    <div class="list-item__description">
+                        <p>Тип: <span>Смартфон</span></p>
+                        <p>Диагональ экрана, дюймы: <span>6.5</span></p>
+                        <p>Емкость аккумулятора, мАч: <span>5000</span></p>
+                    </div>
+                    <button class="list-item__add">В корзину</button>
+                </div>
+            </li>
+            <li class="item-list__item">
+                <div class="list-item__left">
+                    <div class="img-wrapper">
+                        <img class="list-item__img" src="./assets/img/item.webp" alt="reaclme C30s 2/32 ГБ, черный">
+                        <div class="image-filter"></div>
+                    </div>
+                    <footer>
+                        <div class="list-item__rating">
+                            <svg width="16" height="16" style="color: rgb(255, 184, 0);"><path fill="currentColor" d="M8 2a1 1 0 0 1 .87.508l1.538 2.723 2.782.537a1 1 0 0 1 .538 1.667L11.711 9.58l.512 3.266A1 1 0 0 1 10.8 13.9L8 12.548 5.2 13.9a1 1 0 0 1-1.423-1.055l.512-3.266-2.017-2.144a1 1 0 0 1 .538-1.667l2.782-.537 1.537-2.723A1 1 0 0 1 8 2Z"></path></svg>
+                            4.9</div>
+                        <div class="list-item__comments">
+                            <svg width="16" height="16" style="color: rgb(112, 127, 141);"><path fill="currentColor" d="M8 4C5.803 4 4 5.803 4 8c0 .731.226 1.41.608 2.034a1 1 0 0 1 .147.522c0 .506-.07.934-.19 1.338.431-.069.76-.167.964-.276a1 1 0 0 1 .888-.027C6.984 11.851 7.464 12 8 12c2.197 0 4-1.803 4-4s-1.803-4-4-4ZM2 8c0-3.301 2.699-6 6-6s6 2.699 6 6-2.699 6-6 6c-.757 0-1.41-.176-1.998-.41a6.23 6.23 0 0 1-1.265.3c-.593.086-1.208.113-1.743.11a1 1 0 0 1-.888-1.447c.429-.859.6-1.248.64-1.745A5.769 5.769 0 0 1 2 8Z"></path></svg>
+                            207
+                        </div>
+                    </footer>
+                    
+                </div>
+                <div class="list-item__right">
+                    <p class="list-item__price">3000₽
+                        <!-- <span class="list-item__old-price">7 999₽</span> -->
+                    </p>
+                    <p class="list-item__left-count">
+                        Осталось 765 шт
+                    </p>
+                    <h2 class="list-item__title">Смартфон realme C30s 2/32 ГБ, черный</h2>
+                    <div class="list-item__description">
+                        <p>Тип: <span>Смартфон</span></p>
+                        <p>Диагональ экрана, дюймы: <span>6.5</span></p>
+                        <p>Емкость аккумулятора, мАч: <span>5000</span></p>
+                    </div>
+                    <button class="list-item__add">В корзину</button>
+                </div>
+            </li>
+            <li class="item-list__item">
+                <div class="list-item__left">
+                    <div class="img-wrapper">
+                        <img class="list-item__img" src="./assets/img/item.webp" alt="reaclme C30s 2/32 ГБ, черный">
+                        <div class="image-filter"></div>
+                    </div>
+                    <footer>
+                        <div class="list-item__rating">
+                            <svg width="16" height="16" style="color: rgb(255, 184, 0);"><path fill="currentColor" d="M8 2a1 1 0 0 1 .87.508l1.538 2.723 2.782.537a1 1 0 0 1 .538 1.667L11.711 9.58l.512 3.266A1 1 0 0 1 10.8 13.9L8 12.548 5.2 13.9a1 1 0 0 1-1.423-1.055l.512-3.266-2.017-2.144a1 1 0 0 1 .538-1.667l2.782-.537 1.537-2.723A1 1 0 0 1 8 2Z"></path></svg>
+                            4.9</div>
+                        <div class="list-item__comments">
+                            <svg width="16" height="16" style="color: rgb(112, 127, 141);"><path fill="currentColor" d="M8 4C5.803 4 4 5.803 4 8c0 .731.226 1.41.608 2.034a1 1 0 0 1 .147.522c0 .506-.07.934-.19 1.338.431-.069.76-.167.964-.276a1 1 0 0 1 .888-.027C6.984 11.851 7.464 12 8 12c2.197 0 4-1.803 4-4s-1.803-4-4-4ZM2 8c0-3.301 2.699-6 6-6s6 2.699 6 6-2.699 6-6 6c-.757 0-1.41-.176-1.998-.41a6.23 6.23 0 0 1-1.265.3c-.593.086-1.208.113-1.743.11a1 1 0 0 1-.888-1.447c.429-.859.6-1.248.64-1.745A5.769 5.769 0 0 1 2 8Z"></path></svg>
+                            207
+                        </div>
+                    </footer>
+                    
+                </div>
+                <div class="list-item__right">
+                    <p class="list-item__price">3000₽
+                        <!-- <span class="list-item__old-price">7 999₽</span> -->
+                    </p>
+                    <p class="list-item__left-count">
+                        Осталось 765 шт
+                    </p>
+                    <h2 class="list-item__title">Смартфон realme C30s 2/32 ГБ, черный</h2>
+                    <div class="list-item__description">
+                        <p>Тип: <span>Смартфон</span></p>
+                        <p>Диагональ экрана, дюймы: <span>6.5</span></p>
+                        <p>Емкость аккумулятора, мАч: <span>5000</span></p>
+                    </div>
+                    <button class="list-item__add">В корзину</button>
+                </div>
+            </li>
+            <li class="item-list__item">
+                <div class="list-item__left">
+                    <div class="img-wrapper">
+                        <img class="list-item__img" src="./assets/img/item.webp" alt="reaclme C30s 2/32 ГБ, черный">
+                        <div class="image-filter"></div>
+                    </div>
+                    <footer>
+                        <div class="list-item__rating">
+                            <svg width="16" height="16" style="color: rgb(255, 184, 0);"><path fill="currentColor" d="M8 2a1 1 0 0 1 .87.508l1.538 2.723 2.782.537a1 1 0 0 1 .538 1.667L11.711 9.58l.512 3.266A1 1 0 0 1 10.8 13.9L8 12.548 5.2 13.9a1 1 0 0 1-1.423-1.055l.512-3.266-2.017-2.144a1 1 0 0 1 .538-1.667l2.782-.537 1.537-2.723A1 1 0 0 1 8 2Z"></path></svg>
+                            4.9</div>
+                        <div class="list-item__comments">
+                            <svg width="16" height="16" style="color: rgb(112, 127, 141);"><path fill="currentColor" d="M8 4C5.803 4 4 5.803 4 8c0 .731.226 1.41.608 2.034a1 1 0 0 1 .147.522c0 .506-.07.934-.19 1.338.431-.069.76-.167.964-.276a1 1 0 0 1 .888-.027C6.984 11.851 7.464 12 8 12c2.197 0 4-1.803 4-4s-1.803-4-4-4ZM2 8c0-3.301 2.699-6 6-6s6 2.699 6 6-2.699 6-6 6c-.757 0-1.41-.176-1.998-.41a6.23 6.23 0 0 1-1.265.3c-.593.086-1.208.113-1.743.11a1 1 0 0 1-.888-1.447c.429-.859.6-1.248.64-1.745A5.769 5.769 0 0 1 2 8Z"></path></svg>
+                            207
+                        </div>
+                    </footer>
+                    
+                </div>
+                <div class="list-item__right">
+                    <p class="list-item__price">3000₽
+                        <!-- <span class="list-item__old-price">7 999₽</span> -->
+                    </p>
+                    <p class="list-item__left-count">
+                        Осталось 765 шт
+                    </p>
+                    <h2 class="list-item__title">Смартфон realme C30s 2/32 ГБ, черный</h2>
+                    <div class="list-item__description">
+                        <p>Тип: <span>Смартфон</span></p>
+                        <p>Диагональ экрана, дюймы: <span>6.5</span></p>
+                        <p>Емкость аккумулятора, мАч: <span>5000</span></p>
+                    </div>
+                    <button class="list-item__add">В корзину</button>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <nav class="navigation">
+        <ul class="nav-list">
+            <li class="nav-list__item nav-list__item--current">
+                <svg width="24" height="24"><path fill="currentColor" d="M12.664 1.253a1 1 0 0 0-1.328 0l-9 8A1 1 0 0 0 2 10v10a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a2 2 0 1 1 4 0v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V10a1 1 0 0 0-.336-.747l-9-8ZM16 19v-5a4 4 0 0 0-8 0v5H4v-8.55l8-7.112 8 7.111V19h-4Z"></path></svg>
+                Главная
+            </li>
+            <li class="nav-list__item">
+                <svg width="24" height="24"><path fill="currentColor" fill-rule="evenodd" d="M8 9.5a7.5 7.5 0 1 1 11.738 6.189l3.143 5.837a1 1 0 1 1-1.762.948l-3.168-5.884A7.5 7.5 0 0 1 8 9.5ZM15.5 4a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Z" clip-rule="evenodd"></path><path fill="currentColor" d="M2 9a1 1 0 0 0 0 2h3a1 1 0 1 0 0-2H2Zm0 5a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H2Zm0 5a1 1 0 1 0 0 2h9a1 1 0 1 0 0-2H2Z"></path></svg>
+                Каталог
+            </li>
+            <li class="nav-list__item">
+                <svg width="24" height="24"><path fill="currentColor" d="M6 6a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2h4a1 1 0 0 1 .986 1.164l-1.582 9.494A4 4 0 0 1 17.46 22H6.54a4 4 0 0 1-3.945-3.342L1.014 9.164A1 1 0 0 1 2 8h4V6Zm2 2h5a1 1 0 1 1 0 2H3.18l1.389 8.329A2 2 0 0 0 6.54 20h10.92a2 2 0 0 0 1.972-1.671L20.82 10H17a1 1 0 0 1-1-1V6a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2Z"></path></svg>
+                Корзина
+            </li>
+            <li class="nav-list__item">
+                <svg width="24" height="24"><path fill="currentColor" d="M7 5a4 4 0 0 0-4 4c0 3.552 2.218 6.296 4.621 8.22A21.525 21.525 0 0 0 12 19.91a21.58 21.58 0 0 0 4.377-2.69C18.78 15.294 21 12.551 21 9a4 4 0 0 0-4-4c-1.957 0-3.652 1.396-4.02 3.2a1 1 0 0 1-1.96 0C10.652 6.396 8.957 5 7 5Zm5 17c-.316-.02-.56-.147-.848-.278a23.542 23.542 0 0 1-4.781-2.942C3.777 16.705 1 13.449 1 9a6 6 0 0 1 6-6 6.183 6.183 0 0 1 5 2.568A6.183 6.183 0 0 1 17 3a6 6 0 0 1 6 6c0 4.448-2.78 7.705-5.375 9.78a23.599 23.599 0 0 1-4.78 2.942c-.543.249-.732.278-.845.278Z"></path></svg>
+                Избранное
+            </li>
+            <li class="nav-list__item">
+                <svg width="24" height="24"><path fill="currentColor" d="M8 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-8.3 4.286c.016.015.185.165.5.323.376.187.971.391 1.8.391.829 0 1.425-.204 1.8-.391.175-.088.355-.19.5-.323a1 1 0 0 1 1.407 1.421C15.587 16.827 14.357 18 12 18c-2.358 0-3.587-1.173-3.707-1.293A1 1 0 0 1 9.7 15.286Z"></path><path fill="currentColor" d="M11 2a1 1 0 0 1 1-1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12a11 11 0 0 1 6.23-9.914 1 1 0 0 1 1.36.524c.292.72.69 1.565 1.362 2.233C10.592 5.481 11.524 6 13 6a1 1 0 1 1 0 2c-2.024 0-3.458-.743-4.459-1.74-.6-.596-1.027-1.267-1.34-1.875A9 9 0 1 0 12 3a1 1 0 0 1-1.001-1Z"></path></svg>
+                Личный
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
